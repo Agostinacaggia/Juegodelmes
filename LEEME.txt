@@ -1,0 +1,14 @@
+LAS ODIADAS DEL GORDO PAPI - JUEGO EN VIVO
+
+IMPORTANTE: requiere Netlify Functions + Netlify Blobs. No basta con abrir index.html ni con arrastrar un HTML aislado.
+
+1. Descomprimir este ZIP en una carpeta.
+2. Subir la carpeta como repositorio GitHub (incluyendo package.json, netlify.toml y netlify/functions/state.mjs).
+3. En Netlify: Add new project > Import an existing project > elegir el repositorio.
+4. Build command: dejar vacio. Publish directory: . (punto).
+5. En Site configuration > Environment variables, crear ADMIN_PIN con una clave secreta (por ejemplo, una de 6+ caracteres). Aplicar a Functions y redeploy.
+6. Abrir la URL del sitio. Las 5 amigas eligen Mili/Rena/Delfi/Valen/Guada. Agos elige Agos, ingresa ADMIN_PIN y conduce desde su computadora.
+7. Agos pulsa Siguiente para avanzar. Mostrar/ocultar resultados permite ver votos por pregunta. Las pantallas de las jugadoras se actualizan cada 1.5 segundos.
+8. No publicar la clave en el grupo. El enlace es el mismo para todas.
+
+NOTAS: es un juego privado informal, sin cuentas de usuario. Los nombres no tienen autenticacion y alguien podria hacerse pasar por otra jugadora. Para un grupo de amigas es suficiente si cada una elige su propio nombre. La sincronizacion depende de internet y Netlify Blobs. Los votos de Agos no estan habilitados, porque Agos es la conductora; las preguntas se resuelven entre las otras 5. El contenido de la revelacion esta incluido en el HTML y una persona tecnica podria inspeccionarlo antes del final.
